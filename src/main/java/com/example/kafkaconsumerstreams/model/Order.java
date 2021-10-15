@@ -15,18 +15,17 @@ import org.springframework.data.mongodb.core.mapping.Document;
 @AllArgsConstructor
 public class Order {
 
-    @Id
-    private Long id;
+  @Id private Long id;
 
-    @BsonProperty("name")
-    private String name;
+  @BsonProperty("name")
+  private String name;
 
-    @BsonProperty("type")
-    private String type;
+  @BsonProperty("type")
+  private String type;
 
-    @BsonProperty("price")
-    private Double price;
+  @BsonProperty("price")
+  private Double price;
 
-    @BsonProperty("quantity")
-    private Integer quantity;
+  @BsonProperty("quantity")
+  private Integer quantity;
 }
